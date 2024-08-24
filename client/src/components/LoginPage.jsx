@@ -9,7 +9,7 @@ const LoginPage = () => {
         <form className="max-w-md mx-auto">
           <input type="email" placeholder="your@gmail.com" />
           <input type="password" placeholder="password" />
-          <button className="primary">Login</button>
+          <button className="primary mt-1">Login</button>
           <div className="text-center p-2 text-gray-500">
             Don't have an account yet?
             <Link className="text-black underline" to={"/register"}>

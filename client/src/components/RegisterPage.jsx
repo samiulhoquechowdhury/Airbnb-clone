@@ -38,7 +38,7 @@ const RegisterPage = () => {
             value={Password}
             onChange={ev => setPassword(ev.target.value)}
           />
-          <button className="primary">Register</button>
+          <button className="primary mt-1">Register</button>
           <div className="text-center p-2 text-gray-500">
             Already have an acoount?
             <Link className="text-black underline" to={"/login"}>
