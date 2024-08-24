@@ -1,12 +1,19 @@
-import React from 'react'
+import React from "react";
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import LoginPage from "./components/LoginPage";
+import Layout from "./Layout";
+import IndexPage from "./components/IndexPage";
 
 const App = () => {
   return (
-    <div >
-      <h1 className='text-3xl text-red-600 bg-slate-600 p-2 m-0 text-center'>Hello World</h1>
-      Hello World
-    </div>
-  )
-}
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<IndexPage />} />
+        <Route path="/login" element={<LoginPage />} />
+      </Route>
+    </Routes>
+  );
+};
 
-export default App
+export default App;
