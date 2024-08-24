@@ -5,6 +5,11 @@ import LoginPage from "./components/LoginPage";
 import Layout from "./Layout";
 import IndexPage from "./components/IndexPage";
 import RegisterPage from "./components/RegisterPage";
+import axios from "axios";
+
+
+axios.defaults.baseURL = 'http://localhost:4000'
+
 
 const App = () => {
   return (
